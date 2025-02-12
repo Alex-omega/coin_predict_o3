@@ -1,0 +1,17 @@
+crypto_trading/
+├── data/
+│   ├── raw_data/               # 用于存储原始抓取的实时数据
+│   ├── processed_data/         # 用于存储处理后的数据（如特征工程结果）
+│   └── coin_models/            # 存储每个币种的微调模型
+├── models/
+│   ├── mother_model/           # 存储母模型
+│   ├── model_utils.py          # 模型训练、微调等工具函数
+│   ├── data_preprocessing.py   # 数据预处理函数
+│   └── utils.py                # 一些通用的工具函数（如API请求，数据抓取等）
+├── predictions/
+│   ├── prediction_results/     # 用于存储预测结果和预测日志
+│   └── visualizations/         # 存储预测可视化图表
+├── config/
+│   ├── settings.py             # 项目配置（如API keys，模型参数等）
+│   └── dev_settings.py         # 开发模式设置
+└── main.py                     # 主程序入口，控制各个步骤的执行流程
